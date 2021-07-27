@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>AR samp</title>
+    <title>AR sample</title>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
     <!-- <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
@@ -30,12 +30,11 @@
       <a-camera gps-camera rotation-reader></a-camera>
     </a-scene> -->
 
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      <a-marker
-        preset="custom"
-        type="pattern"
-        url="C:\Users\antho\OneDrive\Desktop\ar_sample-main\assets\pattern_marker.patt"
-      >
+    <a-scene
+      embedded
+      arjs="sourceType: webcam;sourceWidth:1280; sourceHeight:960; debugUIEnabled: false;"
+    >
+      <a-marker preset="custom" type="pattern" url="pattern_marker.patt">
         <a-box
           position="0 1 0"
           material="opacity: 0.5; color: #F70087;"
